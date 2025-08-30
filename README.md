@@ -1,7 +1,7 @@
 # elevenlabs_vc
 
 [![Crates.io](https://img.shields.io/crates/v/elevenlabs_vc.svg)](https://crates.io/crates/elevenlabs_vc)
-[![Docs.rs](https://docs.rs/elevenlabs_stt/badge.svg)](https://docs.rs/elevenlabs_vc)
+[![Docs.rs](https://docs.rs/elevenlabs_vc/badge.svg)](https://docs.rs/elevenlabs_vc)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](#license)
 
 A type-safe, async Rust client for the [ElevenLabs Voice Changer API](https://elevenlabs.io/app/speech-synthesis/speech-to-speech). Transform audio from one voice to another. Maintain full control over emotion, timing and delivery. Ergonomic API.
@@ -25,7 +25,7 @@ A type-safe, async Rust client for the [ElevenLabs Voice Changer API](https://el
 - **[Elevenlabs STT](https://crates.io/crates/elevenlabs_stt)**: ElevenLabs Speech-to-Text API. ✅
 - **[Elevenlabs SFX](https://crates.io/crates/elevenlabs_sfx)**: ElevenLabs Sound Effects API. ✅
 - **[Elevenlabs VC](https://crates.io/crates/elevenlabs_vc)**: ElevenLabs Voice Changer API. ✅
-- **Elevenlabs TTV**: ElevenLabs Text-to-Voice API. ⏳
+- **[Elevenlabs TTV](https://crates.io/crates/elevenlabs_ttv)**: ElevenLabs Text To Voice API. ✅
 - **Elevenlabs CM**: ElevenLabs Music Compose API. ⏳
 - **Elevenlabs AUI**: ElevenLabs Audio Isolation API. ⏳
 - **Elevenlabs DUB**: ElevenLabs Dubbing API. ⏳
@@ -36,7 +36,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-elevenlabs_vc = "0.0.2"
+elevenlabs_vc = "0.0.3"
 ```
 
 ## Quick Start
