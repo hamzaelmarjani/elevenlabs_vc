@@ -4,7 +4,7 @@
 [![Docs.rs](https://docs.rs/elevenlabs_stt/badge.svg)](https://docs.rs/elevenlabs_vc)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](#license)
 
-A type-safe, async Rust client for the [ElevenLabs Coice Changer API](https://elevenlabs.io/app/speech-synthesis/speech-to-speech). Transform audio from one voice to another. Maintain full control over emotion, timing and delivery. Ergonomic API.
+A type-safe, async Rust client for the [ElevenLabs Voice Changer API](https://elevenlabs.io/app/speech-synthesis/speech-to-speech). Transform audio from one voice to another. Maintain full control over emotion, timing and delivery. Ergonomic API.
 
 ## Features
 
@@ -36,7 +36,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-elevenlabs_vc = "0.0.1"
+elevenlabs_vc = "0.0.2"
 ```
 
 ## Quick Start
@@ -146,16 +146,16 @@ cargo run --example advanced_vc
 
 ## API Overview
 
-| Method                            | Description                                                               |
-| --------------------------------- | ------------------------------------------------------------------------- |
-| `ElevenLabsVCClient::new(String)` | Create client instance (required)\*                                       |
-| `.output_format(String)`          | Output format of the changed voice audio (optional)                       |
-| `.model_id(String)`               | Identifier of the model that will be used (optional)                      |
-| `.voice_settings(VoiceSettings)`  | Voice settings overriding stored settings for the given voice (optional)  |
-| `.seed(u32)`                      | Our system will make a best effort to sample deterministically (optional) |
-| `.remove_background_noise(bool)`  | Remove the background noise from your audio input (optional)              |
-| `.file_format(String)`            | The format of input audio (optional)                                      |
-| `.execute()`                      | Run request → change audio voice (required)\*                             |
+| Method                                     | Description                                                                        |
+| ------------------------------------------ | ---------------------------------------------------------------------------------- |
+| `ElevenLabsVCClient::new(Vec<u8>, String)` | Create client instance, requires audio (Vec<u8>) & voice_id (String), (required)\* |
+| `.output_format(String)`                   | Output format of the changed voice audio (optional)                                |
+| `.model_id(String)`                        | Identifier of the model that will be used (optional)                               |
+| `.voice_settings(VoiceSettings)`           | Voice settings overriding stored settings for the given voice (optional)           |
+| `.seed(u32)`                               | Our system will make a best effort to sample deterministically (optional)          |
+| `.remove_background_noise(bool)`           | Remove the background noise from your audio input (optional)                       |
+| `.file_format(String)`                     | The format of input audio (optional)                                               |
+| `.execute()`                               | Run request → change audio voice (required)\*                                      |
 
 ## Error Handling
 
