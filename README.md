@@ -4,7 +4,7 @@
 [![Docs.rs](https://docs.rs/elevenlabs_vc/badge.svg)](https://docs.rs/elevenlabs_vc)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](#license)
 
-A type-safe, async Rust client for the [ElevenLabs Voice Changer API](https://elevenlabs.io/app/speech-synthesis/speech-to-speech). Transform audio from one voice to another. Maintain full control over emotion, timing and delivery. Ergonomic API.
+A type-safe, async Rust client for the [ElevenLabs Voice Changer API](https://elevenlabs.io/app/speech-synthesis/speech-to-speech). Transform audio from one voice to another. Maintain full control over emotion, timing and delivery, with simple Ergonomic API.
 
 ## Features
 
@@ -21,12 +21,12 @@ A type-safe, async Rust client for the [ElevenLabs Voice Changer API](https://el
 **This project is part of a milestone to implement all ElevenLabs APIs in Rust.**
 
 - **[Elevenlabs TTS](https://crates.io/crates/elevenlabs_tts)**: ElevenLabs Text-to-Speech API. ✅
-- **[Elevenlabs TTD](https://crates.io/crates/elevenlabs_ttd)**: ElevenLabs Text-to-Dialogue API. ✅
 - **[Elevenlabs STT](https://crates.io/crates/elevenlabs_stt)**: ElevenLabs Speech-to-Text API. ✅
+- **[Elevenlabs TTD](https://crates.io/crates/elevenlabs_ttd)**: ElevenLabs Text-to-Dialogue API. ✅
+- **[Elevenlabs TTV](https://crates.io/crates/elevenlabs_ttv)**: ElevenLabs Text-to-Voice API. ✅
+- **[Elevenlabs TTM](https://crates.io/crates/elevenlabs_ttm)**: ElevenLabs Text-to-Music API. ✅
 - **[Elevenlabs SFX](https://crates.io/crates/elevenlabs_sfx)**: ElevenLabs Sound Effects API. ✅
 - **[Elevenlabs VC](https://crates.io/crates/elevenlabs_vc)**: ElevenLabs Voice Changer API. ✅
-- **[Elevenlabs TTV](https://crates.io/crates/elevenlabs_ttv)**: ElevenLabs Text To Voice API. ✅
-- **Elevenlabs CM**: ElevenLabs Music Compose API. ⏳
 - **Elevenlabs AUI**: ElevenLabs Audio Isolation API. ⏳
 - **Elevenlabs DUB**: ElevenLabs Dubbing API. ⏳
 
@@ -36,7 +36,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-elevenlabs_vc = "0.0.3"
+elevenlabs_vc = "0.0.4"
 ```
 
 ## Quick Start
